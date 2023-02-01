@@ -12,6 +12,7 @@ const projects = [
     description: "a developer's portfolio",
     github: "",
     stack: "",
+    status: "complete",
   },
   {
     image: flink,
@@ -19,6 +20,7 @@ const projects = [
     description: "A replica of e-commerce groceries-delivery site",
     github: "",
     stack: "",
+    status: "complete",
   },
   {
     image: plantUrbanus,
@@ -26,13 +28,15 @@ const projects = [
     description: "A web app to manage house plants collections",
     github: "",
     stack: "",
+    status: "development",
   },
   {
     image: web4,
-    title: "Data Analysis Dashboard",
-    description: "a developer's portfolio",
+    title: "GR",
+    description: "Personal Website for executive",
     github: "",
     stack: "",
+    status: "development",
   },
 ];
 

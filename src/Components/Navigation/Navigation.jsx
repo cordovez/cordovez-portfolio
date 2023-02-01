@@ -10,7 +10,7 @@ export function Navigation({ night, setNight }) {
           <Socials />
         </div>
 
-        <div className="invisible md:visible">
+        <div className="">
           <NavButtons />
         </div>
 

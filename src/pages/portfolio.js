@@ -5,8 +5,8 @@ import { projects } from "@/Components/Projects/Projects";
 export default function Portfolio({ darkMode }) {
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="px-24 bg-white  dark:bg-gray-900 ">
-        <h1 className="dark:text-gray-600 font-montserrat font-extrabold text-6xl">
+      <div className="px-4 bg-white  dark:bg-gray-900 md:px-24 ">
+        <h1 className="dark:text-gray-600 font-montserrat font-extrabold text-3xl md:text-6xl">
           Repository Portal
         </h1>
         <div className="flex flex-wrap justify-center p-2">
@@ -24,6 +24,7 @@ export default function Portfolio({ darkMode }) {
                   title={project.title}
                   description={project.description}
                   repository={project.repository}
+                  status={project.status}
                   darkMode={darkMode}
                 />
               </div>
