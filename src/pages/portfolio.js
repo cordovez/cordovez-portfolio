@@ -1,59 +1,35 @@
 import Card from "../Components/Projects/Card";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
 
-const projects = [
-  {
-    image: web1,
-    title: "This Site",
-    description: "a developer's portfolio",
-    github: "",
-    stack: "",
-  },
-  {
-    image: web2,
-    title: "Gill Reilly",
-    description: "a developer's portfolio",
-    github: "",
-    stack: "",
-  },
-  {
-    image: web3,
-    title: "The Guardian Scrape",
-    description: "a developer's portfolio",
-    github: "",
-    stack: "",
-  },
-  {
-    image: web4,
-    title: "Data Analysis Dashboard",
-    description: "a developer's portfolio",
-    github: "",
-    stack: "",
-  },
-];
+import { projects } from "@/Components/Projects/Projects";
 
 export default function Portfolio({ darkMode }) {
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="bg-white  dark:bg-gray-900 ">
-        <h1 className="dark:text-gray-800 font-montserrat font-extrabold text-6xl">
+      <div className="px-24 bg-white  dark:bg-gray-900 ">
+        <h1 className="dark:text-gray-600 font-montserrat font-extrabold text-6xl">
           Repository Portal
         </h1>
-        <div className="flex flex-wrap">
-          {projects.map((project, i) => (
-            <Card
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              repository={project.repository}
-              key={i}
-              darkMode={darkMode}
-            />
+        <div className="flex flex-wrap justify-center p-2">
+          {projects.map((project, i) => {
+            if (project.image === "") {
+              return <></>;
+            }
+            return (
+              <div
+                key={i}
+                className=" border border-gray-700 rounded-xl m-2 md:m-4 dark:bg-gray-800"
+              >
+                <Card
+                  image={project.image}
+                  title={project.title}
+                  description={project.description}
+                  repository={project.repository}
+                  darkMode={darkMode}
+                />
+              </div>
+            );
             // <p key={project.index}>{project.title}</p>
-          ))}
+          })}
         </div>
       </div>
     </div>
