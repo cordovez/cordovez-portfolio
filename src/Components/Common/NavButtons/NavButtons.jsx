@@ -10,7 +10,7 @@ export default function NavButtons() {
         ].map(([title, url]) => (
           <li key={url}>
             <Link href={url}>
-              <button className=" text-sm p-2 rounded-md hover:bg-gray-300 dark:bg-cyan-900 dark:hover:bg-cyan-700">
+              <button className=" text-sm p-2 rounded-md border hover:bg-gray-300 dark:bg-cyan-900 dark:hover:bg-cyan-700">
                 {title}
               </button>
             </Link>
