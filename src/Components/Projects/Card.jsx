@@ -1,6 +1,6 @@
+import { Ribbon } from "./ribbon";
 import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
-import { IoConstructSharp } from "react-icons/io5";
 
 export default function Card({
   night,
@@ -14,25 +14,9 @@ export default function Card({
   console.log(night);
   return (
     <div>
-      <div>
-        {status === "development" ? (
-          <div className="corner-ribbon ">
-            {/* <!-- The container --> */}
-            <div className="corner-ribbon__inner  ">
-              {/* <!-- The ribbon --> */}
-              <div className=" corner-ribbon__ribbon flex items-center justify-center">
-                <span className=" text-2xl text-slate-700 ">
-                  <IoConstructSharp />
-                </span>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <></>
-        )}
-      </div>
+      <div>{status === "development" ? <Ribbon /> : <></>}</div>
       <div className={night ? "dark" : ""}>
-        <div className="p-2 max-w-xs  bg-rose-500 text-black dark:text-white dark:bg-gray-800 md:max-w-sm md:p-6">
+        <div className="bg-gray-100 border rounded-lg p-2  flex flex-col max-w-xs text-slate-700 dark:text-white dark:bg-gray-800  md:p-6">
           <div>
             <Image src={image} alt={title} />
           </div>

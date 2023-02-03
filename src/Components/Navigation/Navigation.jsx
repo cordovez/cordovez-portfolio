@@ -20,7 +20,7 @@ export function Navigation({ night, setNight }) {
               setNight(!night);
             }}
           >
-            <BsFillLightbulbFill className="cursor-pointer text-xl dark:text-white dark:hover:text-yellow-300" />
+            <BsFillLightbulbFill className="  cursor-pointer text-xl text-gray-300 hover:text-black dark:text-white dark:hover:text-yellow-300" />
           </a>
         </div>
       </div>

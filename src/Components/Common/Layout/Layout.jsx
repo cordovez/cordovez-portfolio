@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   // useSelectedLayoutSegment();
 
   const [night, setNight] = useState(true);
-
+  console.log("Layout: ", night);
   return (
     <>
       <Hero night={night} setNight={setNight} />

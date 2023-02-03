@@ -9,7 +9,7 @@ export default function Introduction({ night }) {
     "Across many types of tasks and many brain areas, these lateralized patterns tend to switch to bilateral patterns in healthy older adults.";
   return (
     <div className={night ? "dark" : ""}>
-      <div className="flex flex-col items-center p-5 bg-white dark:text-white dark:bg-gray-900 md:flex-row md:justify-center py-20">
+      <div className="flex flex-col items-center p-5 bg-white dark:text-white dark:bg-gray-900 md:flex-row md:justify-center ">
         <div className=" rounded-full h-44 w-44 ring-white ring-1  overflow-hidden   md:w-80 md:h-80 md:flex-none ">
           <Image
             src={headshot}

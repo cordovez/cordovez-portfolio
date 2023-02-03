@@ -38,27 +38,10 @@ export default function Portfolio({ night }) {
     </div>
   );
 }
-// import { useEffect, useState } from "react";
 
-// import Head from "next/head";
-// import { Hero } from "../Components/Hero/Hero";
-
-// import Portfolio from "./portfolio";
-// import Layout from "@/Components/Common/Layout/Layout";
-
-// export default function Home() {
-//   const [darkMode, setDarkMode] = useState(true);
-
-//   // useEffect(() => setDarkMode(true), []);
-
-//   return (
-//     <div className={darkMode ? "dark" : ""}>
-//       <Head>
-//         <title>Cordovez-Mantilla</title>
-//         <meta name="description" content="development portfolio" />
-//         <meta name="viewport" content="width=device-width, initial-scale=1" />
-//         <link rel="icon" href="/favicon.ico" />
-//       </Head>
-//     </div>
-//   );
-// }
+{
+  /* <hr />
+<div className="h-full">
+  <div className="py-20 px-12 dark:bg-slate-900  sm:px-24n pt-10">
+    <h1 className="dark:text-gray-100 font-montserrat font-extrabold text-4xl mb-4 "> */
+}
