@@ -23,7 +23,8 @@ const projects = [
     image: wordCount,
     title: "Data Scraping with Python and Jupyter Notebooks",
     description: "Basic web scraping as a scaffold to text analysis using NLP",
-    github: "https://github.com/cordovez/guardian_opinions_word-count",
+    github:
+      "https://github.com/cordovez/the_guardian_vocabulary/blob/main/guardianscraper/guardian_vocab_2.ipynb",
     stack: [SiJavascript, FaReact, TbBrandNextjs],
     status: "complete",
   },
